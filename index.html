@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
   <head>
     <title>manas 🍃</title>
@@ -11,6 +11,25 @@
     <meta property="og:title" content="manas 🍃" />
     <meta property="og:description" content="manas mengle - software dev" />
     <meta property="og:image" content="https://alphacerium.dev/profile.png" />
+    <script type="text/javascript">
+      window.onload = function () {
+        var a = document.getElementById("optOut");
+
+        a.onclick = function () {
+          if (localStorage.getItem("umami.disabled") === "1") {
+            localStorage.removeItem("umami.disabled");
+          } else {
+            localStorage.setItem("umami.disabled", 1);
+          }
+        };
+      };
+    </script>
+    <script
+      defer
+      data-domains="alphacerium.dev"
+      src="https://umami.alphacerium.dev/script.js"
+      data-website-id="731296fb-a90e-4f5c-9f77-6aa42094c3be"
+    ></script>
   </head>
   <body>
     <div class="page-wrapper">
@@ -19,7 +38,7 @@
           <aside>
             <h1><abbr title="manas mengle">alpha 🍃</abbr></h1>
 
-            <ul id="traits" class="inline-list" style="font-size: ">
+            <ul id="traits" class="inline-list" style="font-size:">
               <li id="age">18</li>
               <li>computer-based sorcerer</li>
               <li>musician</li>
@@ -95,6 +114,14 @@
         <footer>
           made by <a href="https://alphacerium.dev">alphacerium</a><br />
           theme by <a href="https://char.lt">charlotte som</a>
+        </footer>
+        <footer>
+          this site anonymously (without cookies) collect basic analytics using
+          <a
+            href="https://umami.alphacerium.dev/share/5rY7aEQOWI7QnXhE/alphacerium.dev"
+          >
+            umami</a
+          >. You can <a id="optOut" href="#">opt out</a> here.
         </footer>
       </article>
     </div>
